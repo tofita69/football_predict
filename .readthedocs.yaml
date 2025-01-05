@@ -4,15 +4,16 @@ build:
   os: ubuntu-24.04
   tools:
     python: "3.13"
-  source_dir: source # Or your source directory if different
 
 sphinx:
   configuration: source/conf.py
-  requirements: requirements.txt # Or your requirements file path
+  builder: sphinx.builders.html  # Explicitly set the builder (optional, but recommended)
+  source: source  # Correct way to specify the source directory for Sphinx
+  requirements: requirements.txt
 
 formats:
   - pdf
 
 python:
   install:
-    - requirements: requirements.txt  # Correct: Now a list with one dictionary item
+    - requirements: requirements.txt
