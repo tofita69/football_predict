@@ -7,8 +7,6 @@ build:
 
 sphinx:
   configuration: source/conf.py
-  source: source  # Correct way to specify the source directory for Sphinx
-  requirements: requirements.txt
 
 formats:
   - pdf
