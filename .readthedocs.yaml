@@ -11,8 +11,8 @@ sphinx:
   requirements: requirements.txt # Or your requirements file path
 
 formats:
-  - pdf  # Correct: Now a list with one item
+  - pdf
 
 python:
   install:
-    requirements: requirements.txt
+    - requirements: requirements.txt  # Correct: Now a list with one dictionary item
